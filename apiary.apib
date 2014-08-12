@@ -48,23 +48,17 @@ A single Note object with all its details
 ### Remove a Note [DELETE]
 + Response 204
 
-## Blocks [/bitbloq:Block]
-### List all Blocks [GET]
-+ Response 200 (application/json)
+## Compile Code [/bitbloq:Program]
+API to compile code
 
-        [{
-          "id": 1,
-          "name": "aaa",
-          "category": "bq"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
+### Compile program [POST]
 
-### Create a Block [POST]
-+ Request (application/json)
-
-        { "title": "Buy cheese and bread for breakfast." }
+###Parameters###
+|Name|Description|Type|Default|Required
+|----|-----------|----|:-----:|:------:|
+|arch|Architecture for which will be compiled code. For example: "arduino" |String||*|
+|board|name board|String||*|
+|code|source code to be compiled|String||*|
 
 + Response 201 (application/json)
 
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
