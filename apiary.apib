@@ -49,7 +49,7 @@ A single Note object with all its details
 + Response 204
 
 ## Compile Code [/bitbloq:Program]
-API to compile code
+API to compile code and get the results.
 
 ### Compile program [POST]
 
@@ -65,4 +65,20 @@ API to compile code
     + Header
             Location: https://silkroad/resources/bitbloq:Program/123
 
+
+
+### Compile program [GET]
+
+###Fields###
+|Name|Description|Type|
+|id  |Program compiled identifier|String|
+|domain|Domain (id) that the user belongs to|String|*|
+|username|Username is an internal identifier of the user between its domain|String|*|
+|email|Email of the user|String|*|
+
+
++ Response 201 (application/json)
     
+    + Header
+            Location: https://silkroad/resources/bitbloq:Program/123
+
