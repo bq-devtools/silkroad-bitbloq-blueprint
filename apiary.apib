@@ -100,10 +100,22 @@ API to compile code and get the results.
 
 To delete compilation information the request must have "content-Type" : "application/json"
 
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
 + Response 204 (application/json)
 
 ### Delete bin file [DELETE]
 
 To delete bin file the request must have "content-Type" : "application/octet-stream"
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
 
 + Response 204 (application/json)
