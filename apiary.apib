@@ -96,6 +96,14 @@ API to compile code and get the results.
 
 + Response 200 (application/octet-stream)
 
-### Get bin file [DELETE]
+### delete compilation information [DELETE]
+
+To delete compilation information the request must have "content-Type" : "application/json"
+
++ Response 204 (application/json)
+
+### delete bin file [DELETE]
+
+To delete bin file the request must have "content-Type" : "application/octet-stream"
 
 + Response 204 (application/json)
