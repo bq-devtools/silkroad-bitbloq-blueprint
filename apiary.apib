@@ -7,7 +7,7 @@ Bitbloq is an Arduino IDE designed for children. It allows to program sketches a
 # Group Notes
 Bitbloq related resources of the **Bitbloq API**
 
-## Blocks [/bitbloq:Block]
+## Blocks [/v1.0/resource/bitbloq:Block]
 ### List all Blocks [GET]
 + Response 200 (application/json)
 
@@ -48,7 +48,7 @@ A single Note object with all its details
 ### Remove a Note [DELETE]
 + Response 204
 
-## Compile Code [/bitbloq:Program]
+## Compile Code [/v1.0/resource/bitbloq:Program]
 API to compile code and get the results.
 
 ### Compile program [POST]
@@ -65,7 +65,7 @@ API to compile code and get the results.
     + Header
             Location: https://silkroad/resources/bitbloq:Program/123
 
-## Get compilation program [/bitbloq:Program/{id}]
+## Get compilation program [/v1.0/resource/bitbloq:Program/{id}]
 API to compile code and get the results.
 
 ### Get information about compilation [GET]
