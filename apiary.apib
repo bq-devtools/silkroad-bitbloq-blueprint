@@ -32,6 +32,12 @@ Avaliable from version 1.2.0
 |----|-----------|----|
 |400  |bad_request |the json's parameters are incorrect o json incomplete|
 
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
+
 
 + Response 201 (application/json)
     
@@ -65,8 +71,14 @@ Avaliable from version 1.2.0
 |----|-----------|----|
 |400  |bad_request |the json's parameters are incorrect o json incomplete|
 
++ Request
 
-+ Response 201 (application/json)
+    + Headers
+
+            Authorization : Bearer {token}  
+
+
++ Response 204
 
 
 ### Add or modify project image [PUT]
@@ -77,6 +89,14 @@ The request headers must contain the content type of the image, e.g. Content-Typ
 
 Avaliable from version 1.2.0
 
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
+            
++ Response 204
+
 ### Add or modify project xml descriptor [PUT]
 
 The request headers must contain Content-Type: application/xml
@@ -84,6 +104,14 @@ The request headers must contain Content-Type: application/xml
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
+            
++ Response 204
 
 ### Get project metadata [GET]
 
@@ -130,6 +158,14 @@ The request headers must contain Accept: "content type of the image", e.g. Accep
 
 Avaliable from version 1.2.0
 
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: image/png
+
++ Response 200 (image/png)
+
 ### Get project xml descriptor [GET]
 
 The request headers must contain Accept: application/xml
@@ -137,6 +173,14 @@ The request headers must contain Accept: application/xml
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/xml
+
++ Response 200 (application/xml)
 
 ### Delete project metadata [DELETE]
 
@@ -146,21 +190,45 @@ The request headers must contain Accept: application/json
 
 Avaliable from version 1.2.0
 
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
++ Response 204 (application/json)
+
 ### Delete project image [DELETE]
 
-The request headers must contain Accept: "content type of the image", e.g. Accept: image/png
+The request headers must contain Accept: application/json
 
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
++ Response 204 (application/json)
 
 ### Delete project xml descriptor [DELETE]
 
-The request headers must contain Accept: application/xml
+The request headers must contain Accept: application/json
 
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
++ Response 204 (application/json)
 
 # Group Release
 Bitbloq releases are stored in reources-api
@@ -190,6 +258,12 @@ Avaliable from version 1.2.0
 |Status|Error|Description|
 |----|-----------|----|
 |400  |bad_request |the json's parameters are incorrect o json incomplete|
+
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
 
 
 + Response 201 (application/json)
@@ -225,8 +299,15 @@ Avaliable from version 1.2.0
 |----|-----------|----|
 |400  |bad_request |the json's parameters are incorrect o json incomplete|
 
++ Request
 
-+ Response 201 (application/json)
+    + Headers
+
+            Authorization : Bearer {token}     
+            Accept: application/json
+
+
++ Response 204
 
 
 ### Add or modify release image [PUT]
@@ -237,6 +318,14 @@ The request headers must contain the content type of the image, e.g. Content-Typ
 
 Avaliable from version 1.2.0
 
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
+            
++ Response 204
+
 ### Add or modify release xml descriptor [PUT]
 
 The request headers must contain Content-Type: application/xml
@@ -244,6 +333,14 @@ The request headers must contain Content-Type: application/xml
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
+            
++ Response 204
 
 ### Get release metadata [GET]
 
@@ -292,6 +389,14 @@ The request headers must contain Accept: "content type of the image", e.g. Accep
 
 Avaliable from version 1.2.0
 
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: image/png
+
++ Response 200 (image/png)
+
 ### Get release xml descriptor [GET]
 
 The request headers must contain Accept: application/xml
@@ -299,6 +404,14 @@ The request headers must contain Accept: application/xml
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/xml
+
++ Response 200 (application/xml)
 
 ### Delete release metadata [DELETE]
 
@@ -308,21 +421,45 @@ The request headers must contain Accept: application/json
 
 Avaliable from version 1.2.0
 
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
++ Response 204 (application/json)
+
 ### Delete release image [DELETE]
 
-The request headers must contain Accept: "content type of the image", e.g. Accept: image/png
+The request headers must contain Accept: application/json
 
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
++ Response 204 (application/json)
 
 ### Delete release xml descriptor [DELETE]
 
-The request headers must contain Accept: application/xml
+The request headers must contain Accept: application/json
 
 ###Version###
 
 Avaliable from version 1.2.0
+
++ Request
+    + Headers
+
+            Authorization : Bearer {token}   
+            Accept: application/json
+
++ Response 204 (application/json)
 
 
 # Group Program
@@ -351,6 +488,11 @@ Avaliable from version 1.2.0
 |----|-----------|----|
 |400  |bad_request |the json's parameters are incorrect o json incomplete|
 
++ Request
+
+    + Headers
+
+            Authorization : Bearer {token}  
 
 + Response 201 (application/json)
     
